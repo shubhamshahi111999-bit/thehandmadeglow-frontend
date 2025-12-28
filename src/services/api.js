@@ -28,7 +28,7 @@ export const authAPI = {
 
 // Product APIs
 export const productAPI = {
-  getAllProducts: (category) => api.get('/products/', { params: { category } }),
+  getAllProducts: (category) => api.get('/products', { params: { category } }),
   getProduct: (id) => api.get(`/products/${id}`),
   createProduct: (data) => api.post('/products/', data),
   updateProduct: (id, data) => api.put(`/products/${id}`, data),
@@ -37,10 +37,10 @@ export const productAPI = {
 
 // Order APIs
 export const orderAPI = {
-  createOrder: (data) => api.post('/orders/', data),
+  createOrder: (data) => api.post('/orders', data),
   getMyOrders: () => api.get('/orders/my-orders'),
   getOrder: (id) => api.get(`/orders/${id}`),
-  getAllOrders: (status) => api.get('/orders/', { params: { status_filter: status } }),
+  getAllOrders: (status) => api.get('/orders', { params: { status_filter: status } }),
   updateOrderStatus: (id, status) => api.patch(`/orders/${id}/status`, { status }),
 };
 
