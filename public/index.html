@@ -8,8 +8,8 @@
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="2575.4">
   <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #0000d3; -webkit-text-stroke: #0000d3}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #0000d3; -webkit-text-stroke: #0000d3; min-height: 14.0px}
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #0000c9; -webkit-text-stroke: #0000c9}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #0000c9; -webkit-text-stroke: #0000c9; min-height: 14.0px}
     span.s1 {font-kerning: none}
   </style>
 </head>
@@ -35,6 +35,30 @@
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>--&gt;</span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;meta name="description" content="The Handmade Glow – Premium Handmade Candles" /&gt;</span></p>
 <p class="p1"><span class="s1">&lt;title&gt;The Handmade Glow&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>&lt;script src="https://assets.emergent.sh/scripts/emergent-main.js"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!--</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>These two scripts have been added for the Visual Edits, please do not edit or remove them</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>--&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Only load visual edit scripts when inside an iframe</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (window.self !== window.top) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// Load debug monitor script</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>var debugMonitorScript = document.createElement('script');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>debugMonitorScript.src = 'https://assets.emergent.sh/scripts/debug-monitor.js';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.head.appendChild(debugMonitorScript);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// Configure Tailwind</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>window.tailwind = window.tailwind || {};</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>tailwind.config = {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>corePlugins: { preflight: false },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>};</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// Load Tailwind CDN</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>var tailwindScript = document.createElement('script');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>tailwindScript.src = 'https://cdn.tailwindcss.com';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.head.appendChild(tailwindScript);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/script&gt;</span></p>
 <p class="p2"><span class="s1"></span><br></p>
 <p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
 <p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/head&gt;</span></p>
